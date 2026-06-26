@@ -380,3 +380,15 @@ Pendiente validar en `viewer.lvgl.io` y enriquecer gradualmente.
 - Problema: `lvgl_pro/screens/evcc.xml` mantenia la composicion principal pero faltaban chips de modo `Apagado`, `Solar`, `Min+Sol`, `Rapido` y bloque demo/Passat GTE.
 - Resolucion: se repuso panel inferior con potencia, cargado, duracion, Passat GTE, estado desconectado, nivel, plan y objetivo 100%.
 - Validacion: XML bien formado localmente. Pendiente validar en LVGL Viewer.
+
+## 2026-06-26 - Charger arc, switches, solar dropdown y parking
+
+- Problema: `charger.xml` simulaba gauge con botones; no era `lv_arc` real y podia confundir el comportamiento futuro.
+- Resolucion: se cambia a `lv_arc` con `value="69"`, estilos `main/indicator/knob` y `disabled="true"` para que la UI no sea control manual. Firmware actualizara valor segun potencia real.
+- Problema: controles activables eran botones; debian ser interruptores.
+- Resolucion: se anaden `lv_switch` para `Control dinamico` y `Carga activa`.
+- Problema: Solar necesitaba selector de modo bateria SAJ AS1.
+- Resolucion: se anade `lv_dropdown` con `Autoconsumo`, `TOU`, `Reserva` y etiqueta de modo actual.
+- Problema: Parking debe ser accion HA `cover.puerta_parking_inteligente` con abrir/cerrar segun estado.
+- Resolucion visual: boton queda como `Parking Abrir/Cerrar`. Logica real pendiente en firmware/HA: `cover.open_cover` si cerrado, `cover.close_cover` si abierto.
+- Validacion: XML bien formado localmente. Pendiente validar `lv_arc disabled`, `lv_dropdown options` y `play_timeline_event` en LVGL Viewer.

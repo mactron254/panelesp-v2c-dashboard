@@ -1,18 +1,21 @@
 ﻿<screen>
   <animations>
     <timeline name="flow_demo">
-      <animation prop="translate_x" target="dot_grid_home" start="-16" end="16" duration="700"/>
-      <animation prop="translate_y" target="dot_solar_battery" start="-14" end="14" duration="700"/>
-      <animation prop="translate_y" target="dot_home_car" start="-12" end="12" duration="700"/>
+      <animation prop="translate_x" target="dot_grid_home" start="-18" end="18" duration="700"/>
+      <animation prop="translate_x" target="dot_grid_home_2" start="18" end="-18" duration="700"/>
+      <animation prop="translate_y" target="dot_solar_battery" start="-16" end="16" duration="700"/>
+      <animation prop="translate_x" target="dot_solar_home" start="-18" end="18" duration="700"/>
+      <animation prop="translate_y" target="dot_home_car" start="-14" end="14" duration="700"/>
     </timeline>
   </animations>
   <styles>
     <style name="style_main" bg_color="0xfffbf4"/>
+    <style name="style_dropdown" bg_color="0xffffff" border_color="0xd8cfc0" border_width="1" radius="8"/>
   </styles>
   <view>
     <style name="style_main"/>
     <lv_label x="30" y="20" text="Power Flow Card Plus" style_text_color="0x111111"/>
-    <lv_button x="846" y="14" width="150" height="40" style_bg_color="0x1f2a2e" style_radius="20"><lv_label text="Puerta Parking" align="center"/></lv_button>
+    <lv_button x="820" y="14" width="176" height="40" style_bg_color="0x1f2a2e" style_radius="20"><lv_label text="Parking Abrir/Cerrar" align="center"/></lv_button>
 
     <lv_button x="52" y="96" width="132" height="132" style_bg_color="0xfdfaf2" style_radius="66"><lv_label x="28" y="28" text="Non Fossil"/><lv_label x="34" y="72" text="331 W"/></lv_button>
     <lv_button x="52" y="312" width="132" height="132" style_bg_color="0xfdfaf2" style_radius="66"><lv_label x="44" y="22" text="Grid"/><lv_label x="28" y="56" text="&lt;- 311 W"/><lv_label x="28" y="84" text="-&gt; 662 W"/></lv_button>
@@ -22,7 +25,7 @@
     <lv_button x="806" y="454" width="116" height="116" style_bg_color="0xfdfaf2" style_radius="58"><lv_label x="40" y="24" text="GTE"/><lv_label x="20" y="64" text="2.210 W"/></lv_button>
 
     <lv_label x="184" y="360" text="--------------------------&gt;" style_text_color="0x3498db"/>
-    <lv_label x="184" y="386" text="--------------------------&gt;" style_text_color="0x8e44ad"/>
+    <lv_label x="184" y="386" text="&lt;--------------------------" style_text_color="0x8e44ad"/>
     <lv_label x="580" y="330" text="-----------------------&gt;" style_text_color="0x47b7aa"/>
     <lv_label x="514" y="230" text="|" style_text_color="0xff4f91"/>
     <lv_label x="514" y="260" text="v" style_text_color="0xff4f91"/>
@@ -32,18 +35,20 @@
     <lv_label x="864" y="432" text="v" style_text_color="0x7bbcff"/>
 
     <lv_button name="dot_grid_home" x="316" y="356" width="18" height="18" style_bg_color="0x3498db" style_radius="9"/>
-    <lv_button x="390" y="382" width="18" height="18" style_bg_color="0x8e44ad" style_radius="9"/>
-    <lv_button x="666" y="326" width="18" height="18" style_bg_color="0x47b7aa" style_radius="9"/>
+    <lv_button name="dot_grid_home_2" x="390" y="382" width="18" height="18" style_bg_color="0x8e44ad" style_radius="9"/>
+    <lv_button name="dot_solar_home" x="666" y="326" width="18" height="18" style_bg_color="0x47b7aa" style_radius="9"/>
     <lv_button name="dot_solar_battery" x="506" y="286" width="18" height="18" style_bg_color="0xff4f91" style_radius="9"/>
     <lv_button name="dot_home_car" x="856" y="428" width="18" height="18" style_bg_color="0x7bbcff" style_radius="9"/>
     <lv_button x="504" y="224" width="18" height="18" style_bg_color="0xf39c12" style_radius="9"/>
 
-    <lv_button x="230" y="522" width="150" height="44" style_bg_color="0x0aa35f" style_radius="22"><lv_label text="Autoconsumo" align="center"/></lv_button>
-    <lv_button x="406" y="522" width="110" height="44" style_bg_color="0xffffff" style_radius="22"><lv_label text="TOU" align="center"/></lv_button>
-    <lv_button x="542" y="522" width="130" height="44" style_bg_color="0xffffff" style_radius="22"><lv_label text="Reserva" align="center"/></lv_button>
-    <lv_button x="700" y="522" width="132" height="44" style_bg_color="0xffffff" style_radius="22">
+    <lv_label x="226" y="520" text="Modo bateria SAJ AS1" style_text_color="0x111111"/>
+    <lv_dropdown x="226" y="548" width="210" options="Autoconsumo&#10;TOU&#10;Reserva" selected="0">
+      <style name="style_dropdown"/>
+    </lv_dropdown>
+    <lv_button x="466" y="544" width="132" height="44" style_bg_color="0xffffff" style_radius="22">
       <lv_label text="Animar flujo" align="center"/>
       <play_timeline_event trigger="clicked" target="self" timeline="flow_demo"/>
     </lv_button>
+    <lv_label x="630" y="554" text="Actual: Autoconsumo" style_text_color="0x111111"/>
   </view>
 </screen>
