@@ -366,3 +366,11 @@ Solucion:
 Estado:
 
 Pendiente validar en `viewer.lvgl.io` y enriquecer gradualmente.
+
+## 2026-06-26 - Ajuste V2C y flujo Solar
+
+- Problema: V2C se alejo demasiado del diseno Lumina Energy visto en hardware.
+- Resolucion: `lvgl_pro/screens/charger.xml` vuelve a composicion clara con titulo Lumina Energy, chip parking, gauge central, metricas laterales y botones iniciar/detener.
+- Problema: Solar no comunicaba direccion de energia como Power Flow Card Plus.
+- Resolucion: `lvgl_pro/screens/solar.xml` ahora usa nodos circulares, lineas con direccion, puntos de flujo y timeline `flow_demo` activable con boton.
+- Nota: si LVGL Viewer rechaza `play_timeline_event` en screen, mantener puntos/direccion visibles y mover la animacion a componente aislado.

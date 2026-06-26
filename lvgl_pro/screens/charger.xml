@@ -1,37 +1,49 @@
 ﻿<screen>
   <styles>
-    <style name="style_main" bg_color="0xf5f7f7"/>
+    <style name="style_main" bg_color="0xf3f0e9"/>
   </styles>
   <view>
     <style name="style_main"/>
-    <lv_label x="28" y="22" text="Trydan" style_text_color="0x111111"/>
-    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x111111" style_radius="21"><lv_label text="Parking" align="center"/></lv_button>
-    <lv_button x="36" y="74" width="952" height="186" style_bg_color="0xffffff" style_radius="18">
-      <lv_label x="24" y="18" text="Cargando"/>
-      <lv_label x="24" y="58" text="3.55 kW"/>
-      <lv_label x="210" y="58" text="1.48 kWh"/>
-      <lv_label x="396" y="58" text="0.21 EUR"/>
-      <lv_button x="24" y="118" width="590" height="12" style_bg_color="0x13c95a"/>
-      <lv_button x="650" y="104" width="230" height="44" style_bg_color="0x111111" style_radius="22"><lv_label text="Pausar recarga" align="center"/></lv_button>
+    <lv_label x="28" y="20" text="Lumina Energy" style_text_color="0x263142"/>
+    <lv_button x="724" y="10" width="132" height="38" style_bg_color="0x615177" style_radius="8"><lv_label text="Puerta Parking" align="center"/></lv_button>
+    <lv_button x="866" y="12" width="48" height="34" style_bg_color="0xeeeae2" style_radius="8"><lv_label text="WiFi" align="center"/></lv_button>
+    <lv_button x="920" y="12" width="48" height="34" style_bg_color="0xeeeae2" style_radius="8"><lv_label text="Hora" align="center"/></lv_button>
+    <lv_button x="974" y="12" width="42" height="34" style_bg_color="0xeeeae2" style_radius="8"><lv_label text="OTA" align="center"/></lv_button>
+
+    <lv_label x="88" y="96" text="MODO DE CARGA" style_text_color="0x6f7784"/>
+    <lv_label x="88" y="130" text="Dinamico" style_text_color="0x263142"/>
+    <lv_label x="88" y="166" text="Ajusta la potencia segun" style_text_color="0x4d5664"/>
+    <lv_label x="88" y="190" text="consumo de vivienda." style_text_color="0x4d5664"/>
+    <lv_label x="88" y="258" text="Desbloqueado &gt;" style_text_color="0x263142"/>
+
+    <lv_button x="444" y="98" width="172" height="172" style_bg_color="0xf3f0e9" style_radius="86">
+      <lv_label x="58" y="54" text="POTENCIA" style_text_color="0x6f7784"/>
+      <lv_label x="48" y="82" text="6935" style_text_color="0x263142"/>
+      <lv_label x="76" y="122" text="W" style_text_color="0x263142"/>
     </lv_button>
-    <lv_button x="36" y="286" width="452" height="188" style_bg_color="0xffffff" style_radius="18">
-      <lv_label x="24" y="18" text="Intensidad de carga"/>
-      <lv_label x="330" y="18" text="31 A"/>
-      <lv_button x="24" y="82" width="360" height="8" style_bg_color="0x111111"/>
-      <lv_label x="24" y="124" text="6 A"/>
-      <lv_label x="352" y="124" text="32 A"/>
-    </lv_button>
-    <lv_button x="536" y="286" width="452" height="188" style_bg_color="0xffffff" style_radius="18">
-      <lv_label x="24" y="18" text="Power Control"/>
-      <lv_label x="24" y="58" text="Activado"/>
-      <lv_label x="24" y="110" text="-4.54 kW"/>
-      <lv_label x="190" y="110" text="0.62 kW"/>
-      <lv_label x="346" y="110" text="-4.46 kW"/>
-    </lv_button>
-    <lv_button x="36" y="504" width="240" height="48" style_bg_color="0x13c95a" style_radius="24"><lv_label text="Programar carga" align="center"/></lv_button>
-    <lv_label x="96" y="570" text="Cargador"/>
-    <lv_label x="342" y="570" text="EVCC"/>
-    <lv_label x="586" y="570" text="Solar"/>
-    <lv_label x="820" y="570" text="Vehiculo"/>
+    <lv_button x="450" y="104" width="18" height="64" style_bg_color="0x263142" style_radius="9"/>
+    <lv_button x="594" y="188" width="18" height="64" style_bg_color="0x263142" style_radius="9"/>
+    <lv_button x="514" y="96" width="72" height="10" style_bg_color="0xd7dde1" style_radius="5"/>
+    <lv_button x="514" y="260" width="72" height="10" style_bg_color="0xd7dde1" style_radius="5"/>
+
+    <lv_label x="816" y="96" text="ENERGIA" style_text_color="0x6f7784"/>
+    <lv_label x="816" y="132" text="42.5 kWh" style_text_color="0x263142"/>
+    <lv_label x="816" y="198" text="TIEMPO" style_text_color="0x6f7784"/>
+    <lv_label x="816" y="234" text="02:45 h:m" style_text_color="0x263142"/>
+    <lv_label x="816" y="300" text="COSTE EST." style_text_color="0x6f7784"/>
+    <lv_label x="816" y="336" text="6.38 EUR" style_text_color="0x263142"/>
+
+    <lv_label x="86" y="344" text="LIMITE MAXIMO" style_text_color="0x6f7784"/>
+    <lv_button x="86" y="386" width="42" height="42" style_bg_color="0xebe7dd" style_radius="10"><lv_label text="-" align="center"/></lv_button>
+    <lv_label x="158" y="392" text="32 A" style_text_color="0x263142"/>
+    <lv_button x="250" y="386" width="42" height="42" style_bg_color="0xebe7dd" style_radius="10"><lv_label text="+" align="center"/></lv_button>
+    <lv_button x="446" y="382" width="156" height="54" style_bg_color="0x615177" style_radius="9"><lv_label text="Iniciar Carga" align="center"/></lv_button>
+    <lv_button x="628" y="382" width="156" height="54" style_bg_color="0xf3f0e9" style_radius="9"><lv_label text="Detener" align="center"/></lv_button>
+
+    <lv_label x="28" y="532" text="WiFi no soportado" style_text_color="0x6f7784"/>
+    <lv_button x="260" y="516" width="116" height="48" style_bg_color="0x50b8c8" style_radius="8"><lv_label text="Cargador" align="center"/></lv_button>
+    <lv_label x="504" y="532" text="EVCC" style_text_color="0x6f7784"/>
+    <lv_label x="692" y="532" text="Solar" style_text_color="0x6f7784"/>
+    <lv_label x="864" y="532" text="Vehiculo" style_text_color="0x6f7784"/>
   </view>
 </screen>
