@@ -1,0 +1,17 @@
+﻿<screen>
+  <styles>
+    <style name='bg' bg_color='0xf6f0e6'/><style name='card' bg_color='0xfffbf4' border_color='0xd8cfc0' border_width='1' radius='12'/><style name='primary' bg_color='0x1f2a2e' radius='10'/><style name='soft' bg_color='0xeee6da' border_color='0xd8cfc0' border_width='1' radius='10'/><style name='ok' bg_color='0x2f8f5b' radius='10'/><style name='bar_main' bg_color='0xd8cfc0' radius='6'/><style name='bar_ind' bg_color='0x2f8f5b' radius='6'/>
+  </styles>
+  <view>
+    <style name='bg'/>
+    <lv_label x='24' y='18' text='L' style_text_color='0x2f8f5b'/><lv_label x='50' y='16' text='Lumina Energy' style_text_color='0x1f2a2e'/><lv_button x='628' y='10' width='164' height='42'><style name='primary'/><lv_label text='Parking' align='center'/></lv_button><lv_label x='812' y='22' text='WiFi OK' style_text_color='0x2f8f5b'/><lv_label x='882' y='22' text='v0.1.5' style_text_color='0x6d756d'/><lv_button x='940' y='10' width='64' height='42'><style name='primary'/><lv_label text='SET' align='center'/></lv_button>
+    <lv_label x='32' y='82' text='Ajustes' style_text_color='0x1f2a2e'/><lv_label x='838' y='86' text='Pantallas: 4' style_text_color='0x6d756d'/>
+    <lv_obj x='32' y='128' width='448' height='142'><style name='card'/><lv_label x='20' y='16' text='RED' style_text_color='0x6d756d'/><lv_label x='20' y='52' text='WiFi: conectado' style_text_color='0x1f2a2e'/><lv_label x='20' y='86' text='IP: 192.168.50.106' style_text_color='0x4d5664'/><lv_button x='314' y='48' width='96' height='44'><style name='ok'/><lv_label text='OK' align='center'/></lv_button></lv_obj>
+    <lv_obj x='512' y='128' width='480' height='206'><style name='card'/><lv_label x='20' y='16' text='SERVICIOS' style_text_color='0x6d756d'/><lv_label x='20' y='52' text='HA: online' style_text_color='0x1f2a2e'/><lv_label x='20' y='86' text='EVCC: demo/offline' style_text_color='0x1f2a2e'/><lv_label x='20' y='120' text='V2C: demo/offline' style_text_color='0x1f2a2e'/><lv_label x='20' y='154' text='OTA: idle' style_text_color='0x1f2a2e'/><lv_button x='330' y='136' width='112' height='46'><style name='primary'/><lv_label text='OTA' align='center'/></lv_button></lv_obj>
+    <lv_obj x='32' y='300' width='448' height='136'><style name='card'/><lv_label x='20' y='16' text='MICROSD 4GB' style_text_color='0x6d756d'/><lv_label x='20' y='54' text='Uso: iconos, logs, backup config' style_text_color='0x1f2a2e'/><lv_label x='20' y='90' text='Arranque: no depende de SD' style_text_color='0x2f8f5b'/></lv_obj>
+    <lv_obj x='512' y='360' width='480' height='76'><style name='card'/><lv_label x='20' y='16' text='Progreso OTA' style_text_color='0x6d756d'/><lv_bar x='180' y='28' width='260' height='12' value='0'><style name='bar_main'/><style name='bar_ind' selector='indicator'/></lv_bar></lv_obj>
+    <lv_button x='228' y='520' width='132' height='52'><style name='soft'/><lv_label text='Cargador' align='center'/></lv_button><lv_button x='404' y='520' width='112' height='52'><style name='soft'/><lv_label text='EVCC' align='center'/></lv_button><lv_button x='560' y='520' width='112' height='52'><style name='soft'/><lv_label text='Solar' align='center'/></lv_button><lv_button x='716' y='520' width='132' height='52'><style name='soft'/><lv_label text='Vehiculo' align='center'/></lv_button>
+  </view>
+</screen>
+
+

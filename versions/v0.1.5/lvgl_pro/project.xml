@@ -1,0 +1,7 @@
+<project lvgl_version="9.5.0" name="panelesp_v2c_dashboard">
+  <targets>
+    <target name="jc1060p470c_i_w">
+      <display width="1024" height="600"/>
+    </target>
+  </targets>
+</project>

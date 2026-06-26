@@ -1,54 +1,13 @@
 ﻿<screen>
-  <animations>
-    <timeline name="flow_demo">
-      <animation prop="translate_x" target="dot_grid_home" start="-18" end="18" duration="700"/>
-      <animation prop="translate_x" target="dot_grid_home_2" start="18" end="-18" duration="700"/>
-      <animation prop="translate_y" target="dot_solar_battery" start="-16" end="16" duration="700"/>
-      <animation prop="translate_x" target="dot_solar_home" start="-18" end="18" duration="700"/>
-      <animation prop="translate_y" target="dot_home_car" start="-14" end="14" duration="700"/>
-    </timeline>
-  </animations>
   <styles>
-    <style name="style_main" bg_color="0xfffbf4"/>
-    <style name="style_dropdown" bg_color="0xffffff" border_color="0xd8cfc0" border_width="1" radius="8"/>
+    <style name='bg' bg_color='0xf6f0e6'/><style name='card' bg_color='0xfffbf4' border_color='0xd8cfc0' border_width='1' radius='12'/><style name='primary' bg_color='0x1f2a2e' radius='10'/><style name='soft' bg_color='0xeee6da' border_color='0xd8cfc0' border_width='1' radius='10'/><style name='node' bg_color='0xffffff' border_color='0xd8cfc0' border_width='1' radius='60'/><style name='node_main' bg_color='0x2f8f5b' radius='64'/><style name='dropdown' bg_color='0xffffff' border_color='0xd8cfc0' border_width='1' radius='8'/>
   </styles>
   <view>
-    <style name="style_main"/>
-    <lv_label x="30" y="20" text="Power Flow Card Plus" style_text_color="0x111111"/>
-    <lv_button x="820" y="14" width="176" height="40" style_bg_color="0x1f2a2e" style_radius="20"><lv_label text="Parking Abrir/Cerrar" align="center"/></lv_button>
-
-    <lv_button x="52" y="96" width="132" height="132" style_bg_color="0xfdfaf2" style_radius="66"><lv_label x="28" y="28" text="Non Fossil"/><lv_label x="34" y="72" text="331 W"/></lv_button>
-    <lv_button x="52" y="312" width="132" height="132" style_bg_color="0xfdfaf2" style_radius="66"><lv_label x="44" y="22" text="Grid"/><lv_label x="28" y="56" text="&lt;- 311 W"/><lv_label x="28" y="84" text="-&gt; 662 W"/></lv_button>
-    <lv_button x="446" y="96" width="132" height="132" style_bg_color="0xfdfaf2" style_radius="66"><lv_label x="38" y="28" text="Solar"/><lv_label x="24" y="72" text="2.204 W"/></lv_button>
-    <lv_button x="446" y="356" width="132" height="132" style_bg_color="0xfdfaf2" style_radius="66"><lv_label x="42" y="22" text="84 %"/><lv_label x="32" y="52" text="Battery"/><lv_label x="24" y="84" text="610 W"/></lv_button>
-    <lv_button x="794" y="262" width="144" height="144" style_bg_color="0xfdfaf2" style_radius="72"><lv_label x="48" y="30" text="Home"/><lv_label x="32" y="76" text="3.165 W"/></lv_button>
-    <lv_button x="806" y="454" width="116" height="116" style_bg_color="0xfdfaf2" style_radius="58"><lv_label x="40" y="24" text="GTE"/><lv_label x="20" y="64" text="2.210 W"/></lv_button>
-
-    <lv_label x="184" y="360" text="--------------------------&gt;" style_text_color="0x3498db"/>
-    <lv_label x="184" y="386" text="&lt;--------------------------" style_text_color="0x8e44ad"/>
-    <lv_label x="580" y="330" text="-----------------------&gt;" style_text_color="0x47b7aa"/>
-    <lv_label x="514" y="230" text="|" style_text_color="0xff4f91"/>
-    <lv_label x="514" y="260" text="v" style_text_color="0xff4f91"/>
-    <lv_label x="514" y="290" text="|" style_text_color="0xff4f91"/>
-    <lv_label x="514" y="320" text="v" style_text_color="0xff4f91"/>
-    <lv_label x="864" y="408" text="|" style_text_color="0x7bbcff"/>
-    <lv_label x="864" y="432" text="v" style_text_color="0x7bbcff"/>
-
-    <lv_button name="dot_grid_home" x="316" y="356" width="18" height="18" style_bg_color="0x3498db" style_radius="9"/>
-    <lv_button name="dot_grid_home_2" x="390" y="382" width="18" height="18" style_bg_color="0x8e44ad" style_radius="9"/>
-    <lv_button name="dot_solar_home" x="666" y="326" width="18" height="18" style_bg_color="0x47b7aa" style_radius="9"/>
-    <lv_button name="dot_solar_battery" x="506" y="286" width="18" height="18" style_bg_color="0xff4f91" style_radius="9"/>
-    <lv_button name="dot_home_car" x="856" y="428" width="18" height="18" style_bg_color="0x7bbcff" style_radius="9"/>
-    <lv_button x="504" y="224" width="18" height="18" style_bg_color="0xf39c12" style_radius="9"/>
-
-    <lv_label x="226" y="520" text="Modo bateria SAJ AS1" style_text_color="0x111111"/>
-    <lv_dropdown x="226" y="548" width="210" options="Autoconsumo&#10;TOU&#10;Reserva" selected="0">
-      <style name="style_dropdown"/>
-    </lv_dropdown>
-    <lv_button x="466" y="544" width="132" height="44" style_bg_color="0xffffff" style_radius="22">
-      <lv_label text="Animar flujo" align="center"/>
-      <play_timeline_event trigger="clicked" target="self" timeline="flow_demo"/>
-    </lv_button>
-    <lv_label x="630" y="554" text="Actual: Autoconsumo" style_text_color="0x111111"/>
+    <style name='bg'/>
+    <lv_label x='24' y='18' text='L' style_text_color='0x2f8f5b'/><lv_label x='50' y='16' text='Lumina Energy' style_text_color='0x1f2a2e'/><lv_button x='628' y='10' width='164' height='42'><style name='primary'/><lv_label text='Parking' align='center'/></lv_button><lv_label x='812' y='22' text='WiFi OK' style_text_color='0x2f8f5b'/><lv_label x='882' y='22' text='v0.1.5' style_text_color='0x6d756d'/><lv_button x='940' y='10' width='64' height='42'><style name='soft'/><lv_label text='SET' align='center'/></lv_button>
+    <lv_obj x='28' y='82' width='248' height='354'><style name='card'/><lv_label x='18' y='18' text='BATERIA SAJ AS1' style_text_color='0x6d756d'/><lv_label x='18' y='58' text='84 %' style_text_color='0x1f2a2e'/><lv_label x='18' y='104' text='610 W carga' style_text_color='0x2f8f5b'/><lv_label x='18' y='152' text='Modo actual' style_text_color='0x6d756d'/><lv_dropdown x='18' y='184' width='204' options='Autoconsumo&#10;TOU&#10;Reserva' selected='0'><style name='dropdown'/></lv_dropdown><lv_label x='18' y='250' text='Reserva: 20 %' style_text_color='0x4d5664'/><lv_label x='18' y='288' text='SD logs: opcional' style_text_color='0x6d756d'/></lv_obj>
+    <lv_obj x='308' y='82' width='688' height='354'><style name='card'/><lv_button x='288' y='132' width='116' height='116'><style name='node_main'/><lv_label x='34' y='30' text='CASA' style_text_color='0xffffff'/><lv_label x='28' y='66' text='3.1 kW' style_text_color='0xffffff'/></lv_button><lv_button x='286' y='20' width='120' height='92'><style name='node'/><lv_label x='34' y='18' text='Solar' style_text_color='0x1f2a2e'/><lv_label x='26' y='52' text='2.2 kW' style_text_color='0xd98032'/></lv_button><lv_button x='52' y='132' width='120' height='92'><style name='node'/><lv_label x='42' y='18' text='Red' style_text_color='0x1f2a2e'/><lv_label x='26' y='52' text='0.0 kW' style_text_color='0x2f6f9f'/></lv_button><lv_button x='500' y='74' width='120' height='92'><style name='node'/><lv_label x='28' y='18' text='Passat' style_text_color='0x1f2a2e'/><lv_label x='24' y='52' text='2.2 kW' style_text_color='0x2f8f5b'/></lv_button><lv_button x='500' y='228' width='120' height='92'><style name='node'/><lv_label x='34' y='18' text='Cargas' style_text_color='0x1f2a2e'/><lv_label x='24' y='52' text='0.9 kW' style_text_color='0x4d5664'/></lv_button><lv_button x='286' y='260' width='120' height='74'><style name='node'/><lv_label x='30' y='14' text='Bateria' style_text_color='0x1f2a2e'/><lv_label x='34' y='44' text='84 %' style_text_color='0x2f8f5b'/></lv_button><lv_label x='332' y='112' text='v' style_text_color='0xd98032'/><lv_label x='176' y='172' text='----------&gt;' style_text_color='0x2f6f9f'/><lv_label x='408' y='150' text='----------&gt;' style_text_color='0x2f8f5b'/><lv_label x='408' y='228' text='----------&gt;' style_text_color='0x6d756d'/><lv_label x='334' y='248' text='v' style_text_color='0x2f8f5b'/><lv_button x='214' y='170' width='18' height='18' style_bg_color='0x2f6f9f' style_radius='9'/><lv_button x='454' y='148' width='18' height='18' style_bg_color='0x2f8f5b' style_radius='9'/><lv_button x='454' y='226' width='18' height='18' style_bg_color='0x6d756d' style_radius='9'/></lv_obj>
+    <lv_button x='228' y='520' width='132' height='52'><style name='soft'/><lv_label text='Cargador' align='center'/></lv_button><lv_button x='404' y='520' width='112' height='52'><style name='soft'/><lv_label text='EVCC' align='center'/></lv_button><lv_button x='560' y='520' width='112' height='52'><style name='primary'/><lv_label text='Solar' align='center'/></lv_button><lv_button x='716' y='520' width='132' height='52'><style name='soft'/><lv_label text='Vehiculo' align='center'/></lv_button>
   </view>
 </screen>
+

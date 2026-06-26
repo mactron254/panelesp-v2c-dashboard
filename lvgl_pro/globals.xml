@@ -1,48 +1,14 @@
-<globals>
-  <api>
-  </api>
-
+﻿<globals>
+  <api></api>
   <consts>
-    <color name="color_bg" value="0xf7f1e7" help="Kinetic Ivory base"/>
-    <color name="color_panel" value="0xfffbf4" help="Warm panel"/>
-    <color name="color_text" value="0x1f2a2e" help="Primary text"/>
-    <color name="color_muted" value="0x6d756d" help="Muted text"/>
-    <color name="color_line" value="0xd8cfc0" help="Soft divider"/>
-    <color name="color_green" value="0x2f8f5b" help="Energy green"/>
-    <color name="color_blue" value="0x2f6f9f" help="EV blue"/>
-    <color name="color_orange" value="0xd98032" help="Charge orange"/>
-    <color name="color_red" value="0xb74d4d" help="Error red"/>
-    <px name="screen_w" value="1024"/>
-    <px name="screen_h" value="600"/>
-    <px name="top_h" value="72"/>
-    <px name="bottom_h" value="86"/>
-    <px name="pad" value="20"/>
-    <px name="radius" value="8"/>
+    <color name='color_bg' value='0xf6f0e6' help='Claro Lumina background'/><color name='color_panel' value='0xfffbf4' help='Warm card'/><color name='color_text' value='0x1f2a2e' help='Primary text'/><color name='color_muted' value='0x6d756d' help='Muted text'/><color name='color_line' value='0xd8cfc0' help='Card border'/><color name='color_green' value='0x2f8f5b' help='Energy green'/><color name='color_blue' value='0x2f6f9f' help='Grid and EV blue'/><color name='color_orange' value='0xd98032' help='Charge orange'/><color name='color_red' value='0xb74d4d' help='Error red'/><px name='screen_w' value='1024'/><px name='screen_h' value='600'/><px name='top_h' value='64'/><px name='bottom_h' value='80'/><px name='pad' value='20'/><px name='radius' value='12'/>
   </consts>
-
   <styles>
-    <style name="style_screen_base" bg_color="#color_bg" pad_all="0"/>
-    <style name="style_panel" bg_color="#color_panel" radius="#radius" border_color="#color_line" border_width="1" pad_all="18"/>
-    <style name="style_title" text_color="#color_text"/>
-    <style name="style_body" text_color="#color_muted"/>
-    <style name="style_number" text_color="#color_text"/>
-    <style name="style_chip" bg_color="0xffffff" radius="8" border_color="#color_line" border_width="1" pad_hor="14" pad_ver="8"/>
-    <style name="style_button" bg_color="#color_text" text_color="0xffffff" radius="8" pad_hor="20" pad_ver="14"/>
+    <style name='style_screen_base' bg_color='#color_bg' pad_all='0'/><style name='style_panel' bg_color='#color_panel' radius='#radius' border_color='#color_line' border_width='1' pad_all='18'/><style name='style_title' text_color='#color_text'/><style name='style_body' text_color='#color_muted'/><style name='style_number' text_color='#color_text'/><style name='style_button' bg_color='#color_text' text_color='0xffffff' radius='10' pad_hor='20' pad_ver='14'/><style name='style_button_soft' bg_color='0xeee6da' text_color='#color_text' radius='10' border_color='#color_line' border_width='1'/>
   </styles>
-
   <subjects>
-    <string name="wifi_status" value="WiFi remoto pendiente"/>
-    <string name="clock_text" value="--:--"/>
-    <string name="ha_status" value="Demo"/>
-    <int name="charger_power_w" value="3200"/>
-    <int name="solar_power_w" value="4200"/>
-    <int name="home_power_w" value="980"/>
-    <int name="battery_soc" value="62"/>
+    <string name='wifi_status' value='WiFi OK'/><string name='firmware_version' value='v0.1.5'/><string name='ha_status' value='online'/><string name='sd_status' value='optional'/><int name='charger_power_w' value='6935'/><int name='solar_power_w' value='2204'/><int name='home_power_w' value='3165'/><int name='battery_soc' value='84'/>
   </subjects>
-
-  <images>
-  </images>
-
-  <fonts>
-  </fonts>
+  <images></images>
+  <fonts></fonts>
 </globals>
