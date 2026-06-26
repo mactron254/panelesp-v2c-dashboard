@@ -322,3 +322,25 @@ Datos encontrados:
 Estado:
 
 Pendiente integrar WiFi remoto sin guardar credenciales reales en Git.
+
+## 2026-06-26 - LVGL Pro preview solo carga componentes simples
+
+Error:
+
+LVGL Pro Viewer muestra aviso `No runtime in the project, using the bundled runtimes for the preview`. Las pantallas no previsualizan, pero `action_button.xml` si.
+
+Causa:
+
+El aviso de runtime es informativo. El fallo real viene de pantallas con componentes custom, bindings y constantes; el Viewer web es mas sensible que el parser XML basico.
+
+Solucion:
+
+- `lvgl_pro/screens/*.xml` reescritas inline.
+- Sin componentes custom.
+- Sin bindings.
+- Sin referencias a constantes globales.
+- Solo widgets LVGL built-in y colores directos.
+
+Estado:
+
+Pendiente validar en `viewer.lvgl.io`.
