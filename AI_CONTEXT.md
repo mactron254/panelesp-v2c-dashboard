@@ -6,7 +6,7 @@ Proyecto ESP-IDF para ESP32-P4 JC1060P470C_I_W con LVGL 9.5.
 
 Version actual:
 
-- `VERSION`: 0.1.0
+- `VERSION`: 0.1.1
 - `STABLE_VERSION`: 0.1.0
 
 Objetivo inmediato:
@@ -35,7 +35,7 @@ Pinout actual:
 - GT911 interrupt: GPIO 21
 - MIPI DSI PHY LDO: canal 3, 2500 mV
 - microSD: referencia BSP incluida usa SDMMC slot 0, 4-bit, D0 GPIO39, D1 GPIO40, D2 GPIO41, D3 GPIO42, CLK GPIO43, CMD GPIO44, LDO canal 4. Validar en placa antes de activar por defecto.
-- WiFi: ESP32-P4 no tiene WiFi nativo. Usar `esp_wifi_remote` con coprocesador externo; ultima estable verificada en registry Espressif: `1.6.1`. Pendiente transporte real.
+- WiFi: ESP32-P4 usa ESP32-C6 por ESP-Hosted MCU/SDIO. Probado en v0.1.1 con `esp_wifi_remote` 1.6.1 y `esp_hosted` 2.12.9. Necesita `CONFIG_ESP_HOSTED_MEMPOOL_PREFER_SPIRAM=y` para evitar falta de RAM interna.
 
 Uso previsto microSD:
 
@@ -105,7 +105,7 @@ idf.py build
 Version actual:
 
 ```powershell
-cd "C:\Users\marco\Documents\panel cargdaor 2.0\versions\v0.1.0"
+cd "C:\Users\marco\Documents\panel cargdaor 2.0\versions\v0.1.1"
 idf.py set-target esp32p4
 idf.py build
 ```

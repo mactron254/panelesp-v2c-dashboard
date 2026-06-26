@@ -392,3 +392,33 @@ Pendiente validar en `viewer.lvgl.io` y enriquecer gradualmente.
 - Problema: Parking debe ser accion HA `cover.puerta_parking_inteligente` con abrir/cerrar segun estado.
 - Resolucion visual: boton queda como `Parking Abrir/Cerrar`. Logica real pendiente en firmware/HA: `cover.open_cover` si cerrado, `cover.close_cover` si abierto.
 - Validacion: XML bien formado localmente. Pendiente validar `lv_arc disabled`, `lv_dropdown options` y `play_timeline_event` en LVGL Viewer.
+## 2026-06-26 - ESP-Hosted C6 SDIO falla por mempool sin RAM interna
+
+Error:
+
+```text
+E HS_MP: mempool create failed: no mem
+assert failed: sdio_mempool_create sdio_drv.c:255 (buf_mp_g)
+```
+
+Causa:
+
+`esp_hosted` reserva buffers de transporte SDIO en RAM interna por defecto. En ESP32-P4 con UI LVGL 1024x600 y PSRAM, la RAM interna disponible no basta para ese pool.
+
+Solucion:
+
+- Activado `CONFIG_ESP_HOSTED_MEMPOOL_PREFER_SPIRAM=y`.
+- Activado `CONFIG_ESP_HOSTED_DFLT_TASK_FROM_SPIRAM=y`.
+- Mantener `esp_wifi_remote` 1.6.1 y `esp_hosted` 2.12.9.
+- Credenciales WiFi solo en `sdkconfig` local, no en Git.
+
+Validacion:
+
+- Build `versions/v0.1.1` correcto.
+- Flash por `COM6` correcto.
+- Arranque sin assert durante 45 s.
+- IP recibida por WiFi C6: `192.168.50.106`.
+
+Estado:
+
+Resuelto en `versions/v0.1.1`.
