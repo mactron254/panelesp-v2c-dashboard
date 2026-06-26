@@ -1,4 +1,7 @@
 <globals>
+  <api>
+  </api>
+
   <consts>
     <color name="color_bg" value="0xf7f1e7" help="Kinetic Ivory base"/>
     <color name="color_panel" value="0xfffbf4" help="Warm panel"/>
@@ -36,4 +39,10 @@
     <int name="home_power_w" value="980"/>
     <int name="battery_soc" value="62"/>
   </subjects>
+
+  <images>
+  </images>
+
+  <fonts>
+  </fonts>
 </globals>

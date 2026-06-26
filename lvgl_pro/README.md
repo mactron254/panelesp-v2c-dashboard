@@ -10,10 +10,13 @@ Estado:
 
 Abrir online:
 
-1. Subir repo publico a GitHub.
-2. Abrir <https://viewer.lvgl.io>.
-3. En `Open Project`, pegar URL del repo o ruta:
+1. Abrir <https://viewer.lvgl.io>.
+2. En `Open Project`, pegar exactamente:
    `https://github.com/ORG/REPO/tree/main/lvgl_pro`
+
+No abrir un XML suelto. LVGL Pro necesita abrir la carpeta de proyecto que contiene `project.xml` y `globals.xml`.
+
+Nota: si Online Share muestra `Project path is not available` al exportar codigo, usar LVGL Pro Editor local. El visor web sirve para previsualizar/editar; la exportacion puede depender de ruta local.
 
 Estructura:
 

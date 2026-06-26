@@ -11,7 +11,8 @@ Objetivo: usar LVGL Pro Editor free para disenar UI en XML y exportar C cuando e
 ## Flujo
 
 1. Editar XML en `lvgl_pro/`.
-2. Previsualizar en LVGL Pro Editor o <https://viewer.lvgl.io>.
+2. Abrir proyecto completo, no un XML suelto.
+3. Previsualizar en LVGL Pro Editor o <https://viewer.lvgl.io>.
 3. Mantener 1024x600 en `project.xml`.
 4. Exportar C a carpeta temporal.
 5. Integrar salida en `components/ui_pro_generated`.
@@ -29,6 +30,8 @@ Cuando el repo este en GitHub:
 ```text
 https://github.com/ORG/REPO/tree/main/lvgl_pro
 ```
+
+Si se abre la raiz del repo, LVGL Pro puede mezclarlo con el proyecto ESP-IDF. Para exportar codigo usar preferiblemente `lvgl_pro/` como proyecto.
 
 ## Seguridad
 

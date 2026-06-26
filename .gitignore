@@ -10,6 +10,7 @@ sdkconfig.old
 __pycache__/
 .codex/
 .agents/
+.tmp_*/
 tools/drivers/
 JC1060P470C_I_W CHINO 1/
 JC1060P470C_I_W chino 2/

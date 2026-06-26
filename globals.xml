@@ -1,4 +1,7 @@
 <globals>
+  <api>
+  </api>
+
   <consts>
     <color name="color_bg" value="0xf7f1e7"/>
     <color name="color_panel" value="0xfffbf4"/>
@@ -14,4 +17,13 @@
     <style name="style_screen_base" bg_color="#color_bg" pad_all="0"/>
     <style name="style_panel" bg_color="#color_panel" radius="8" border_color="#color_line" border_width="1" pad_all="18"/>
   </styles>
+
+  <subjects>
+  </subjects>
+
+  <images>
+  </images>
+
+  <fonts>
+  </fonts>
 </globals>
