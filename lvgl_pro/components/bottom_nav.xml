@@ -1,5 +1,5 @@
 <component>
-  <view width="1024" height="86" style_bg_color="0xfffbf4">
+  <view extends="lv_obj" style_width="1024" style_height="86" style_bg_color="0xfffbf4">
     <lv_label x="96" y="32" text="Cargador"/>
     <lv_label x="342" y="32" text="EVCC"/>
     <lv_label x="586" y="32" text="Solar"/>
