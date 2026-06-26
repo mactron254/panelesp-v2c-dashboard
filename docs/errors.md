@@ -374,3 +374,9 @@ Pendiente validar en `viewer.lvgl.io` y enriquecer gradualmente.
 - Problema: Solar no comunicaba direccion de energia como Power Flow Card Plus.
 - Resolucion: `lvgl_pro/screens/solar.xml` ahora usa nodos circulares, lineas con direccion, puntos de flujo y timeline `flow_demo` activable con boton.
 - Nota: si LVGL Viewer rechaza `play_timeline_event` en screen, mantener puntos/direccion visibles y mover la animacion a componente aislado.
+
+## 2026-06-26 - EVCC falta bloque inferior completo
+
+- Problema: `lvgl_pro/screens/evcc.xml` mantenia la composicion principal pero faltaban chips de modo `Apagado`, `Solar`, `Min+Sol`, `Rapido` y bloque demo/Passat GTE.
+- Resolucion: se repuso panel inferior con potencia, cargado, duracion, Passat GTE, estado desconectado, nivel, plan y objetivo 100%.
+- Validacion: XML bien formado localmente. Pendiente validar en LVGL Viewer.
