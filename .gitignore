@@ -1,0 +1,23 @@
+build/
+managed_components/
+**/build/
+**/managed_components/
+sdkconfig
+sdkconfig.old
+**/sdkconfig
+**/sdkconfig.old
+*.pyc
+__pycache__/
+.codex/
+.agents/
+tools/drivers/
+JC1060P470C_I_W CHINO 1/
+JC1060P470C_I_W chino 2/
+JC1060P470C_I_W/
+*.zip
+*.7z
+*.rar
+lvgl_pro/project_local.xml
+versions/*/lvgl_pro/project_local.xml
+secrets.local.*
+*.local.secret

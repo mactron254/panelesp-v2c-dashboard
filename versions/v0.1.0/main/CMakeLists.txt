@@ -1,0 +1,24 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "board_display.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        ui
+        services
+        esp_lcd
+        esp_psram
+        nvs_flash
+        esp_wifi
+        esp_event
+        esp_netif
+        esp_timer
+        esp_hw_support
+        esp_driver_gpio
+        esp_driver_i2c
+        esp_driver_ledc
+        lvgl
+        esp_lcd_jd9165
+        esp_lcd_touch_gt911
+)
