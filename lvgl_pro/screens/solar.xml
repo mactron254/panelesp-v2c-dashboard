@@ -1,32 +1,23 @@
-<screen>
+﻿<screen>
   <styles>
-    <style name="style_main" bg_color="0xf7f1e7"/>
+    <style name="style_main" bg_color="0xfffbf4"/>
   </styles>
   <view>
     <style name="style_main"/>
-    <lv_label x="24" y="20" text="Solar HA"/>
-    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
-      <lv_label text="Parking" align="center"/>
-    </lv_button>
-    <lv_label x="44" y="112" text="Solar"/>
-    <lv_label x="44" y="166" text="4.2 kW"/>
-    <lv_label x="268" y="112" text="Casa"/>
-    <lv_label x="268" y="166" text="0.9 kW"/>
-    <lv_label x="512" y="112" text="Bateria"/>
-    <lv_label x="512" y="166" text="62 %"/>
-    <lv_label x="756" y="112" text="Red"/>
-    <lv_label x="756" y="166" text="-1.1 kW"/>
-    <lv_label x="44" y="292" text="Home Assistant"/>
-    <lv_label x="44" y="342" text="Modo demo hasta configurar token y entidades"/>
-    <lv_button x="44" y="420" width="196" height="56" style_bg_color="0x1f2a2e">
-      <lv_label text="Abrir parking" align="center"/>
-    </lv_button>
-    <lv_button x="260" y="420" width="196" height="56" style_bg_color="0xb74d4d">
-      <lv_label text="Cerrar parking" align="center"/>
-    </lv_button>
-    <lv_label x="96" y="546" text="Cargador"/>
-    <lv_label x="342" y="546" text="EVCC"/>
-    <lv_label x="586" y="546" text="Solar"/>
-    <lv_label x="820" y="546" text="Vehiculo"/>
+    <lv_label x="30" y="22" text="Power Flow Card Plus" style_text_color="0x111111"/>
+    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e" style_radius="21"><lv_label text="Parking" align="center"/></lv_button>
+    <lv_button x="50" y="98" width="128" height="128" style_bg_color="0xfdfaf2" style_radius="64"><lv_label x="32" y="28" text="Non Fossil"/><lv_label x="30" y="70" text="331 W"/></lv_button>
+    <lv_button x="50" y="310" width="128" height="128" style_bg_color="0xfdfaf2" style_radius="64"><lv_label x="38" y="28" text="Grid"/><lv_label x="28" y="62" text="311 W"/><lv_label x="28" y="86" text="662 W"/></lv_button>
+    <lv_button x="448" y="92" width="128" height="128" style_bg_color="0xfdfaf2" style_radius="64"><lv_label x="36" y="28" text="Solar"/><lv_label x="24" y="70" text="2.204 W"/></lv_button>
+    <lv_button x="448" y="350" width="128" height="128" style_bg_color="0xfdfaf2" style_radius="64"><lv_label x="38" y="24" text="84 %"/><lv_label x="28" y="58" text="Battery"/><lv_label x="30" y="86" text="610 W"/></lv_button>
+    <lv_button x="790" y="254" width="138" height="138" style_bg_color="0xfdfaf2" style_radius="69"><lv_label x="42" y="30" text="Home"/><lv_label x="30" y="74" text="3.165 W"/></lv_button>
+    <lv_button x="790" y="438" width="120" height="120" style_bg_color="0xfdfaf2" style_radius="60"><lv_label x="38" y="24" text="GTE"/><lv_label x="24" y="66" text="2.210 W"/></lv_button>
+    <lv_label x="240" y="285" text="-------------- energia --------------" style_text_color="0x4aa3df"/>
+    <lv_label x="500" y="228" text="|" style_text_color="0xff4f91"/>
+    <lv_label x="500" y="260" text="|" style_text_color="0xff4f91"/>
+    <lv_label x="500" y="292" text="|" style_text_color="0xff4f91"/>
+    <lv_button x="250" y="514" width="150" height="44" style_bg_color="0x0aa35f" style_radius="22"><lv_label text="Autoconsumo" align="center"/></lv_button>
+    <lv_button x="424" y="514" width="110" height="44" style_bg_color="0xffffff" style_radius="22"><lv_label text="TOU" align="center"/></lv_button>
+    <lv_button x="558" y="514" width="130" height="44" style_bg_color="0xffffff" style_radius="22"><lv_label text="Reserva" align="center"/></lv_button>
   </view>
 </screen>

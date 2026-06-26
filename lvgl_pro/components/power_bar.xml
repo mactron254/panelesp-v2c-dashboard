@@ -1,0 +1,11 @@
+<component>
+  <api>
+    <prop name="label" type="string" default="Power"/>
+    <prop name="value" type="string" default="0.0 kW"/>
+  </api>
+  <view extends="lv_obj" style_width="360" style_height="64" style_bg_color="0x15172f" style_radius="8">
+    <lv_label x="14" y="10" text="$label"/>
+    <lv_label x="260" y="10" text="$value"/>
+    <lv_button x="14" y="42" width="240" height="8" style_bg_color="0x15d950"/>
+  </view>
+</component>

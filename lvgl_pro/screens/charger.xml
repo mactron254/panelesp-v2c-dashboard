@@ -1,26 +1,37 @@
-<screen>
+﻿<screen>
   <styles>
-    <style name="style_main" bg_color="0xf7f1e7"/>
+    <style name="style_main" bg_color="0xf5f7f7"/>
   </styles>
   <view>
     <style name="style_main"/>
-    <lv_label x="24" y="20" text="Cargador V2C"/>
-    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
-      <lv_label text="Parking" align="center"/>
+    <lv_label x="28" y="22" text="Trydan" style_text_color="0x111111"/>
+    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x111111" style_radius="21"><lv_label text="Parking" align="center"/></lv_button>
+    <lv_button x="36" y="74" width="952" height="186" style_bg_color="0xffffff" style_radius="18">
+      <lv_label x="24" y="18" text="Cargando"/>
+      <lv_label x="24" y="58" text="3.55 kW"/>
+      <lv_label x="210" y="58" text="1.48 kWh"/>
+      <lv_label x="396" y="58" text="0.21 EUR"/>
+      <lv_button x="24" y="118" width="590" height="12" style_bg_color="0x13c95a"/>
+      <lv_button x="650" y="104" width="230" height="44" style_bg_color="0x111111" style_radius="22"><lv_label text="Pausar recarga" align="center"/></lv_button>
     </lv_button>
-    <lv_label x="44" y="112" text="Trydan local"/>
-    <lv_label x="44" y="166" text="3.2 kW"/>
-    <lv_button x="44" y="370" width="196" height="56" style_bg_color="0xd98032">
-      <lv_label text="Pausar" align="center"/>
+    <lv_button x="36" y="286" width="452" height="188" style_bg_color="0xffffff" style_radius="18">
+      <lv_label x="24" y="18" text="Intensidad de carga"/>
+      <lv_label x="330" y="18" text="31 A"/>
+      <lv_button x="24" y="82" width="360" height="8" style_bg_color="0x111111"/>
+      <lv_label x="24" y="124" text="6 A"/>
+      <lv_label x="352" y="124" text="32 A"/>
     </lv_button>
-    <lv_button x="260" y="370" width="196" height="56" style_bg_color="0x2f8f5b">
-      <lv_label text="Reanudar" align="center"/>
+    <lv_button x="536" y="286" width="452" height="188" style_bg_color="0xffffff" style_radius="18">
+      <lv_label x="24" y="18" text="Power Control"/>
+      <lv_label x="24" y="58" text="Activado"/>
+      <lv_label x="24" y="110" text="-4.54 kW"/>
+      <lv_label x="190" y="110" text="0.62 kW"/>
+      <lv_label x="346" y="110" text="-4.46 kW"/>
     </lv_button>
-    <lv_label x="520" y="112" text="Sesion demo"/>
-    <lv_label x="520" y="166" text="16 A / 8.4 kWh"/>
-    <lv_label x="96" y="546" text="Cargador"/>
-    <lv_label x="342" y="546" text="EVCC"/>
-    <lv_label x="586" y="546" text="Solar"/>
-    <lv_label x="820" y="546" text="Vehiculo"/>
+    <lv_button x="36" y="504" width="240" height="48" style_bg_color="0x13c95a" style_radius="24"><lv_label text="Programar carga" align="center"/></lv_button>
+    <lv_label x="96" y="570" text="Cargador"/>
+    <lv_label x="342" y="570" text="EVCC"/>
+    <lv_label x="586" y="570" text="Solar"/>
+    <lv_label x="820" y="570" text="Vehiculo"/>
   </view>
 </screen>

@@ -1,21 +1,24 @@
-<screen>
+﻿<screen>
   <styles>
-    <style name="style_main" bg_color="0xf7f1e7"/>
+    <style name="style_main" bg_color="0xf4f6f8"/>
   </styles>
   <view>
     <style name="style_main"/>
-    <lv_label x="24" y="20" text="Passat GTE"/>
-    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
-      <lv_label text="Parking" align="center"/>
+    <lv_label x="32" y="24" text="Volkswagen Passat GTE" style_text_color="0x10243f"/>
+    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x10243f" style_radius="21"><lv_label text="Parking" align="center"/></lv_button>
+    <lv_button x="46" y="86" width="420" height="420" style_bg_color="0xffffff" style_radius="24">
+      <lv_label x="32" y="28" text="Passat GTE"/>
+      <lv_label x="32" y="84" text="74 %"/>
+      <lv_label x="32" y="138" text="Autonomia electrica 41 km"/>
+      <lv_label x="32" y="196" text="Cable desconectado"/>
+      <lv_button x="32" y="304" width="210" height="54" style_bg_color="0x10243f" style_radius="27"><lv_label text="Ver estado" align="center"/></lv_button>
     </lv_button>
-    <lv_label x="44" y="112" text="Vehiculo"/>
-    <lv_label x="44" y="166" text="Passat GTE"/>
-    <lv_label x="520" y="112" text="Datos demo"/>
-    <lv_label x="520" y="166" text="74 % / 41 km"/>
-    <lv_label x="520" y="228" text="Controles deshabilitados hasta tener datos reales"/>
-    <lv_label x="96" y="546" text="Cargador"/>
-    <lv_label x="342" y="546" text="EVCC"/>
-    <lv_label x="586" y="546" text="Solar"/>
-    <lv_label x="820" y="546" text="Vehiculo"/>
+    <lv_button x="510" y="86" width="220" height="150" style_bg_color="0xffffff" style_radius="18"><lv_label x="24" y="20" text="Carga"/><lv_label x="24" y="72" text="0.0 kW"/></lv_button>
+    <lv_button x="768" y="86" width="220" height="150" style_bg_color="0xffffff" style_radius="18"><lv_label x="24" y="20" text="Clima"/><lv_label x="24" y="72" text="Desactivado"/></lv_button>
+    <lv_button x="510" y="266" width="478" height="240" style_bg_color="0xffffff" style_radius="18"><lv_label x="24" y="20" text="Resumen"/><lv_label x="24" y="76" text="Puertas OK"/><lv_label x="24" y="118" text="Ubicacion pendiente"/><lv_label x="24" y="160" text="Datos reales deshabilitados"/></lv_button>
+    <lv_label x="96" y="570" text="Cargador"/>
+    <lv_label x="342" y="570" text="EVCC"/>
+    <lv_label x="586" y="570" text="Solar"/>
+    <lv_label x="820" y="570" text="Vehiculo"/>
   </view>
 </screen>

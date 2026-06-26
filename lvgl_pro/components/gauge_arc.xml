@@ -1,0 +1,6 @@
+<component>
+  <api>
+    <prop name="value" type="int" default="62"/>
+  </api>
+  <view extends="lv_arc" style_width="150" style_height="150" value="$value" min_value="0" max_value="100"/>
+</component>

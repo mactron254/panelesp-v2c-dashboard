@@ -350,3 +350,19 @@ Actualizacion:
 - Screens ya cargan tras usar sintaxis basica.
 - Components fallaban salvo `action_button`.
 - Components simplificados a sintaxis basica sin flex, bindings, constantes ni props color.
+
+## 2026-06-26 - Redisenyo LVGL Pro estable
+
+Motivo:
+
+El usuario aporto referencias visuales: EVCC oscuro, V2C app 3.0, Power Flow Card Plus y estilo VW moderno para Passat GTE.
+
+Solucion:
+
+- Redisenyo de `lvgl_pro/screens/*.xml` con widgets built-in seguros.
+- Aniadidos componentes `mode_chip`, `power_bar`, `flow_node`, `gauge_arc` para evolucion controlada.
+- Las pantallas siguen inline para evitar que un componente rompa todo el preview.
+
+Estado:
+
+Pendiente validar en `viewer.lvgl.io` y enriquecer gradualmente.

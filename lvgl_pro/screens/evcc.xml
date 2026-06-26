@@ -1,21 +1,40 @@
-<screen>
+﻿<screen>
   <styles>
-    <style name="style_main" bg_color="0xf7f1e7"/>
+    <style name="style_main" bg_color="0x03061f"/>
   </styles>
   <view>
     <style name="style_main"/>
-    <lv_label x="24" y="20" text="EVCC"/>
-    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
-      <lv_label text="Parking" align="center"/>
+    <lv_label x="42" y="30" text="CARGADOR INTELIGENTE" style_text_color="0xffffff"/>
+    <lv_label x="884" y="30" text="0 %" style_text_color="0xffffff"/>
+    <lv_label x="914" y="30" text="Sol" style_text_color="0xcfd6ff"/>
+    <lv_button x="42" y="98" width="165" height="32" style_bg_color="0x16e04f"><lv_label text="0,4 kW" align="center"/></lv_button>
+    <lv_button x="207" y="98" width="695" height="32" style_bg_color="0xfff000"><lv_label text="2,2 kW" align="center"/></lv_button>
+    <lv_label x="48" y="142" text="Casa" style_text_color="0xffffff"/>
+    <lv_label x="170" y="142" text="Carga" style_text_color="0xffffff"/>
+    <lv_label x="550" y="142" text="Red" style_text_color="0xffffff"/>
+    <lv_label x="42" y="190" text="Autoconsumo" style_text_color="0xffffff"/>
+    <lv_label x="820" y="190" text="Excedente" style_text_color="0xffffff"/>
+    <lv_label x="42" y="238" text="In" style_text_color="0xffffff"/>
+    <lv_label x="390" y="238" text="2,7 kW" style_text_color="0xffffff"/>
+    <lv_label x="520" y="238" text="Out" style_text_color="0xffffff"/>
+    <lv_label x="860" y="238" text="2,7 kW" style_text_color="0xffffff"/>
+    <lv_label x="42" y="284" text="Produccion" style_text_color="0xffffff"/>
+    <lv_label x="382" y="284" text="6,9 kWh    2,7 kW" style_text_color="0xffffff"/>
+    <lv_label x="42" y="326" text="Descargar bateria" style_text_color="0xcfd6ff"/>
+    <lv_label x="382" y="326" text="100 %      0,0 kW" style_text_color="0xcfd6ff"/>
+    <lv_label x="42" y="368" text="Consumo de red" style_text_color="0xcfd6ff"/>
+    <lv_label x="382" y="368" text="0,2 ct     0,0 kW" style_text_color="0xcfd6ff"/>
+    <lv_label x="520" y="284" text="Consumo" style_text_color="0xffffff"/>
+    <lv_label x="850" y="284" text="0,1 ct     0,1 kW" style_text_color="0xffffff"/>
+    <lv_label x="520" y="326" text="Punto de carga" style_text_color="0xffffff"/>
+    <lv_label x="850" y="326" text="0,1 ct     0,3 kW" style_text_color="0xffffff"/>
+    <lv_label x="520" y="368" text="Excedente" style_text_color="0xffffff"/>
+    <lv_label x="850" y="368" text="-0,1 ct    2,2 kW" style_text_color="0xffffff"/>
+    <lv_button x="42" y="450" width="900" height="118" style_bg_color="0x2e3045" style_radius="18">
+      <lv_label x="20" y="18" text="demo"/>
+      <lv_label x="20" y="62" text="POTENCIA  300 W"/>
+      <lv_label x="405" y="62" text="CARGADO  0,0 kWh"/>
+      <lv_label x="760" y="62" text="DURACION  --"/>
     </lv_button>
-    <lv_label x="44" y="112" text="Modo solar"/>
-    <lv_label x="44" y="166" text="Min+PV"/>
-    <lv_label x="360" y="112" text="Estado"/>
-    <lv_label x="360" y="166" text="WiFi remoto pendiente"/>
-    <lv_label x="360" y="228" text="PV 4.2 kW   Casa 0.9 kW   Carga 3.0 kW"/>
-    <lv_label x="96" y="546" text="Cargador"/>
-    <lv_label x="342" y="546" text="EVCC"/>
-    <lv_label x="586" y="546" text="Solar"/>
-    <lv_label x="820" y="546" text="Vehiculo"/>
   </view>
 </screen>

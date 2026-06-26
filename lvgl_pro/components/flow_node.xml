@@ -1,0 +1,10 @@
+<component>
+  <api>
+    <prop name="title" type="string" default="Node"/>
+    <prop name="value" type="string" default="0 W"/>
+  </api>
+  <view extends="lv_button" style_width="138" style_height="138" style_bg_color="0xfffbf4" style_radius="69">
+    <lv_label x="34" y="34" text="$title"/>
+    <lv_label x="34" y="74" text="$value"/>
+  </view>
+</component>
