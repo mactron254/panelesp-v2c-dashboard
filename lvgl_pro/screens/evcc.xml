@@ -4,9 +4,9 @@
       <top_bar title="EVCC"/>
       <lv_obj x="24" y="92" width="976" height="398" flex_flow="row" flex_align_main="space_between" style_bg_opa="0">
         <lv_obj width="310" height="398" flex_flow="column" flex_align_main="space_between" style_bg_color="#color_panel" style_radius="#radius" style_border_color="#color_line" style_border_width="1" style_pad_all="22">
-          <lv_label text="Modo solar" style_text_color="#color_muted" style_text_font="montserrat_18"/>
-          <lv_label text="Min+PV" style_text_color="#color_text" style_text_font="montserrat_42"/>
-          <lv_label text="Polling real-time pendiente de WiFi remoto" style_text_color="#color_muted" style_text_font="montserrat_18"/>
+          <lv_label text="Modo solar" style_text_color="#color_muted"/>
+          <lv_label text="Min+PV" style_text_color="#color_text"/>
+          <lv_label text="Polling real-time pendiente de WiFi remoto" style_text_color="#color_muted"/>
         </lv_obj>
         <lv_obj width="640" height="398" flex_flow="row_wrap" flex_align_main="space_between" flex_align_cross="space_between" style_bg_opa="0">
           <metric_card label="Grid" value="-1.1" unit="kW" accent="#color_green"/>

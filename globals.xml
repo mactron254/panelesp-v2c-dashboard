@@ -1,0 +1,17 @@
+<globals>
+  <consts>
+    <color name="color_bg" value="0xf7f1e7"/>
+    <color name="color_panel" value="0xfffbf4"/>
+    <color name="color_text" value="0x1f2a2e"/>
+    <color name="color_muted" value="0x6d756d"/>
+    <color name="color_line" value="0xd8cfc0"/>
+    <color name="color_green" value="0x2f8f5b"/>
+    <color name="color_blue" value="0x2f6f9f"/>
+    <color name="color_orange" value="0xd98032"/>
+    <color name="color_red" value="0xb74d4d"/>
+  </consts>
+  <styles>
+    <style name="style_screen_base" bg_color="#color_bg" pad_all="0"/>
+    <style name="style_panel" bg_color="#color_panel" radius="8" border_color="#color_line" border_width="1" pad_all="18"/>
+  </styles>
+</globals>

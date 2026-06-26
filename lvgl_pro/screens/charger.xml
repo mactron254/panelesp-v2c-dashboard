@@ -4,8 +4,8 @@
       <top_bar title="Cargador V2C"/>
       <lv_obj x="24" y="92" width="976" height="398" flex_flow="row" flex_align_main="space_between" style_bg_opa="0">
         <lv_obj width="430" height="398" flex_flow="column" flex_align_main="space_between" style_bg_color="#color_panel" style_radius="#radius" style_border_color="#color_line" style_border_width="1" style_pad_all="22">
-          <lv_label text="Trydan local" style_text_color="#color_muted" style_text_font="montserrat_18"/>
-          <lv_label text="3.2 kW" style_text_color="#color_text" style_text_font="montserrat_42"/>
+          <lv_label text="Trydan local" style_text_color="#color_muted"/>
+          <lv_label text="3.2 kW" style_text_color="#color_text"/>
           <lv_arc width="210" height="210" value="62" min_value="0" max_value="100" style_arc_color="#color_orange" style_arc_width="18" style_arc_opa="255"/>
           <lv_obj width="100%" height="72" flex_flow="row" flex_align_main="space_between" style_bg_opa="0">
             <action_button text="Pausar" accent="#color_orange"/>

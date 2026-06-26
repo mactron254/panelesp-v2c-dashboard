@@ -1,9 +1,9 @@
 <component>
   <api>
     <prop name="text" type="string" default="Accion"/>
-    <prop name="accent" type="color" default="#color_text"/>
+    <prop name="accent" type="color" default="0x1f2a2e"/>
   </api>
   <view extends="lv_button" width="196" height="64" style_bg_color="$accent" style_radius="8">
-    <lv_label text="$text" align="center" style_text_color="0xffffff" style_text_font="montserrat_18"/>
+    <lv_label text="$text" align="center" style_text_color="0xffffff"/>
   </view>
 </component>

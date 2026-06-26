@@ -1,0 +1,13 @@
+<screen>
+  <view>
+    <lv_obj width="100%" height="100%" style_bg_color="#color_bg" style_pad_all="0">
+      <lv_label x="24" y="20" text="Cargador V2C" style_text_color="#color_text"/>
+      <lv_button x="884" y="16" width="116" height="42" style_bg_color="#color_text" style_radius="8">
+        <lv_label text="Parking" align="center" style_text_color="0xffffff"/>
+      </lv_button>
+      <lv_obj x="24" y="92" width="430" height="398"><style name="style_panel"/><lv_label x="20" y="18" text="Trydan local" style_text_color="#color_muted"/><lv_label x="20" y="72" text="3.2 kW" style_text_color="#color_text"/></lv_obj>
+      <lv_obj x="480" y="92" width="496" height="398"><style name="style_panel"/><lv_label x="20" y="18" text="Sesion demo" style_text_color="#color_muted"/><lv_label x="20" y="72" text="16 A / 8.4 kWh" style_text_color="#color_text"/></lv_obj>
+      <lv_obj x="0" y="514" width="1024" height="86" style_bg_color="#color_panel" style_border_color="#color_line" style_border_width="1"><lv_label x="96" y="32" text="Cargador"/><lv_label x="342" y="32" text="EVCC"/><lv_label x="586" y="32" text="Solar"/><lv_label x="820" y="32" text="Vehiculo"/></lv_obj>
+    </lv_obj>
+  </view>
+</screen>

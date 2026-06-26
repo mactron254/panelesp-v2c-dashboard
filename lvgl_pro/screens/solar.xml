@@ -10,8 +10,8 @@
           <metric_card label="Red" value="-1.1" unit="kW" accent="#color_orange"/>
         </lv_obj>
         <lv_obj width="310" height="398" flex_flow="column" flex_align_main="space_between" style_bg_color="#color_panel" style_radius="#radius" style_border_color="#color_line" style_border_width="1" style_pad_all="22">
-          <lv_label text="Home Assistant" style_text_color="#color_muted" style_text_font="montserrat_18"/>
-          <lv_label bind_text="ha_status" style_text_color="#color_text" style_text_font="montserrat_42"/>
+          <lv_label text="Home Assistant" style_text_color="#color_muted"/>
+          <lv_label text="Demo" style_text_color="#color_text"/>
           <action_button text="Abrir parking" accent="#color_text"/>
           <action_button text="Cerrar parking" accent="#color_red"/>
         </lv_obj>

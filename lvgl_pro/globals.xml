@@ -18,13 +18,13 @@
   </consts>
 
   <styles>
-    <style name="screen_base" bg_color="#color_bg" pad_all="0"/>
-    <style name="panel" bg_color="#color_panel" radius="#radius" border_color="#color_line" border_width="1" pad_all="18"/>
-    <style name="title" text_color="#color_text" text_font="montserrat_28"/>
-    <style name="body" text_color="#color_muted" text_font="montserrat_18"/>
-    <style name="number" text_color="#color_text" text_font="montserrat_42"/>
-    <style name="chip" bg_color="0xffffff" radius="8" border_color="#color_line" border_width="1" pad_hor="14" pad_ver="8"/>
-    <style name="button" bg_color="#color_text" text_color="0xffffff" radius="8" pad_hor="20" pad_ver="14"/>
+    <style name="style_screen_base" bg_color="#color_bg" pad_all="0"/>
+    <style name="style_panel" bg_color="#color_panel" radius="#radius" border_color="#color_line" border_width="1" pad_all="18"/>
+    <style name="style_title" text_color="#color_text"/>
+    <style name="style_body" text_color="#color_muted"/>
+    <style name="style_number" text_color="#color_text"/>
+    <style name="style_chip" bg_color="0xffffff" radius="8" border_color="#color_line" border_width="1" pad_hor="14" pad_ver="8"/>
+    <style name="style_button" bg_color="#color_text" text_color="0xffffff" radius="8" pad_hor="20" pad_ver="14"/>
   </styles>
 
   <subjects>
