@@ -468,3 +468,26 @@ Validacion:
 Estado:
 
 Pendiente validacion visual por usuario en placa y prueba OTA viendo barra.
+
+## 2026-06-26 - UI OTA v0.1.4: parpadeo, engranaje no visible y OTA en header
+
+Problemas:
+
+- Durante progreso OTA la pantalla parpadea demasiado.
+- El emoji/engranaje de Ajustes no aparece con la fuente LVGL actual.
+- El boton OTA debe ir dentro de Ajustes.
+- Falta indicador WiFi arriba.
+
+Solucion:
+
+- Creada version `versions/v0.1.4` desde `v0.1.3`.
+- Boton superior de ajustes cambia de emoji a texto ASCII `SET`.
+- Header muestra `WiFi OK/--` y `v0.1.4`.
+- Boton OTA superior eliminado; OTA queda dentro de pantalla Ajustes con barra propia.
+- Barra OTA usa `LV_ANIM_OFF` y solo se actualiza si cambia porcentaje.
+- `ota_service` reduce cambios de mensaje a saltos de 2% y delay de 30 ms.
+- Creado `NUEVO_CHAT.md` para abrir chat nuevo con contexto.
+
+Estado:
+
+Build y flash por `COM6` correctos. Servidor OTA LAN sirve binario `v0.1.4`. Pendiente validar visualmente parpadeo en placa durante OTA.

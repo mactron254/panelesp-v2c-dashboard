@@ -1,0 +1,16 @@
+idf_component_register(
+    SRCS
+        "app_config.c"
+        "dashboard_state.c"
+        "home_assistant.c"
+        "evcc_client.c"
+        "v2c_trydan.c"
+        "ota_service.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        bootloader_support
+        esp_http_client
+        esp_https_ota
+        cjson
+)
