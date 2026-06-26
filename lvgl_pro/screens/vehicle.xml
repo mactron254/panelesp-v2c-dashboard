@@ -1,29 +1,21 @@
 <screen>
+  <styles>
+    <style name="style_main" bg_color="0xf7f1e7"/>
+  </styles>
   <view>
-    <lv_obj width="100%" height="100%" style_bg_color="0xf7f1e7" style_pad_all="0">
-      <lv_label x="24" y="20" text="Passat GTE" style_text_color="0x1f2a2e"/>
-      <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e" style_radius="8">
-        <lv_label text="Parking" align="center" style_text_color="0xffffff"/>
-      </lv_button>
-
-      <lv_obj x="24" y="92" width="430" height="398" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="20">
-        <lv_label x="0" y="0" text="Vehiculo" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="54" text="Passat GTE" style_text_color="0x1f2a2e"/>
-        <lv_arc x="86" y="128" width="210" height="210" value="74" min_value="0" max_value="100"/>
-      </lv_obj>
-
-      <lv_obj x="480" y="92" width="496" height="398" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="20">
-        <lv_label x="0" y="0" text="Datos demo" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="54" text="74 % / 41 km" style_text_color="0x1f2a2e"/>
-        <lv_label x="0" y="116" text="Controles deshabilitados hasta tener datos reales" style_text_color="0x6d756d"/>
-      </lv_obj>
-
-      <lv_obj x="0" y="514" width="1024" height="86" style_bg_color="0xfffbf4" style_border_color="0xd8cfc0" style_border_width="1">
-        <lv_label x="96" y="32" text="Cargador"/>
-        <lv_label x="342" y="32" text="EVCC"/>
-        <lv_label x="586" y="32" text="Solar"/>
-        <lv_label x="820" y="32" text="Vehiculo"/>
-      </lv_obj>
-    </lv_obj>
+    <style name="style_main"/>
+    <lv_label x="24" y="20" text="Passat GTE"/>
+    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
+      <lv_label text="Parking" align="center"/>
+    </lv_button>
+    <lv_label x="44" y="112" text="Vehiculo"/>
+    <lv_label x="44" y="166" text="Passat GTE"/>
+    <lv_label x="520" y="112" text="Datos demo"/>
+    <lv_label x="520" y="166" text="74 % / 41 km"/>
+    <lv_label x="520" y="228" text="Controles deshabilitados hasta tener datos reales"/>
+    <lv_label x="96" y="546" text="Cargador"/>
+    <lv_label x="342" y="546" text="EVCC"/>
+    <lv_label x="586" y="546" text="Solar"/>
+    <lv_label x="820" y="546" text="Vehiculo"/>
   </view>
 </screen>

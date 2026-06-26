@@ -1,49 +1,32 @@
 <screen>
+  <styles>
+    <style name="style_main" bg_color="0xf7f1e7"/>
+  </styles>
   <view>
-    <lv_obj width="100%" height="100%" style_bg_color="0xf7f1e7" style_pad_all="0">
-      <lv_label x="24" y="20" text="Solar HA" style_text_color="0x1f2a2e"/>
-
-      <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e" style_radius="8">
-        <lv_label text="Parking" align="center" style_text_color="0xffffff"/>
-      </lv_button>
-
-      <lv_obj x="24" y="92" width="220" height="148" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="16">
-        <lv_label x="0" y="0" text="Solar" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="48" text="4.2 kW" style_text_color="0x1f2a2e"/>
-      </lv_obj>
-
-      <lv_obj x="268" y="92" width="220" height="148" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="16">
-        <lv_label x="0" y="0" text="Casa" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="48" text="0.9 kW" style_text_color="0x1f2a2e"/>
-      </lv_obj>
-
-      <lv_obj x="512" y="92" width="220" height="148" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="16">
-        <lv_label x="0" y="0" text="Bateria" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="48" text="62 %" style_text_color="0x1f2a2e"/>
-      </lv_obj>
-
-      <lv_obj x="756" y="92" width="220" height="148" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="16">
-        <lv_label x="0" y="0" text="Red" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="48" text="-1.1 kW" style_text_color="0x1f2a2e"/>
-      </lv_obj>
-
-      <lv_obj x="24" y="270" width="952" height="210" style_bg_color="0xfffbf4" style_radius="8" style_border_color="0xd8cfc0" style_border_width="1" style_pad_all="20">
-        <lv_label x="0" y="0" text="Home Assistant" style_text_color="0x6d756d"/>
-        <lv_label x="0" y="50" text="Modo demo hasta configurar token y entidades" style_text_color="0x1f2a2e"/>
-        <lv_button x="0" y="128" width="196" height="56" style_bg_color="0x1f2a2e" style_radius="8">
-          <lv_label text="Abrir parking" align="center" style_text_color="0xffffff"/>
-        </lv_button>
-        <lv_button x="216" y="128" width="196" height="56" style_bg_color="0xb74d4d" style_radius="8">
-          <lv_label text="Cerrar parking" align="center" style_text_color="0xffffff"/>
-        </lv_button>
-      </lv_obj>
-
-      <lv_obj x="0" y="514" width="1024" height="86" style_bg_color="0xfffbf4" style_border_color="0xd8cfc0" style_border_width="1">
-        <lv_label x="96" y="32" text="Cargador"/>
-        <lv_label x="342" y="32" text="EVCC"/>
-        <lv_label x="586" y="32" text="Solar"/>
-        <lv_label x="820" y="32" text="Vehiculo"/>
-      </lv_obj>
-    </lv_obj>
+    <style name="style_main"/>
+    <lv_label x="24" y="20" text="Solar HA"/>
+    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
+      <lv_label text="Parking" align="center"/>
+    </lv_button>
+    <lv_label x="44" y="112" text="Solar"/>
+    <lv_label x="44" y="166" text="4.2 kW"/>
+    <lv_label x="268" y="112" text="Casa"/>
+    <lv_label x="268" y="166" text="0.9 kW"/>
+    <lv_label x="512" y="112" text="Bateria"/>
+    <lv_label x="512" y="166" text="62 %"/>
+    <lv_label x="756" y="112" text="Red"/>
+    <lv_label x="756" y="166" text="-1.1 kW"/>
+    <lv_label x="44" y="292" text="Home Assistant"/>
+    <lv_label x="44" y="342" text="Modo demo hasta configurar token y entidades"/>
+    <lv_button x="44" y="420" width="196" height="56" style_bg_color="0x1f2a2e">
+      <lv_label text="Abrir parking" align="center"/>
+    </lv_button>
+    <lv_button x="260" y="420" width="196" height="56" style_bg_color="0xb74d4d">
+      <lv_label text="Cerrar parking" align="center"/>
+    </lv_button>
+    <lv_label x="96" y="546" text="Cargador"/>
+    <lv_label x="342" y="546" text="EVCC"/>
+    <lv_label x="586" y="546" text="Solar"/>
+    <lv_label x="820" y="546" text="Vehiculo"/>
   </view>
 </screen>
