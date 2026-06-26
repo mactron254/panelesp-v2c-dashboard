@@ -422,3 +422,49 @@ Validacion:
 Estado:
 
 Resuelto en `versions/v0.1.1`.
+## 2026-06-26 - OTA HTTP LAN devuelve ESP_ERR_INVALID_ARG
+
+Error:
+
+```text
+OTA fallo: ESP_ERR_INVALID_ARG
+```
+
+Causa:
+
+`esp_https_ota` rechaza URLs `http://` si `CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP` esta desactivado. La prueba OTA LAN usa HTTP temporalmente.
+
+Solucion:
+
+- Creada version `versions/v0.1.2` desde `v0.1.1`.
+- Activado `CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP=y` en `sdkconfig.defaults`.
+- Mantener HTTP solo para pruebas LAN. Para version estable usar HTTPS con certificado.
+
+Estado:
+
+Pendiente flashear `v0.1.2` por USB y repetir OTA.
+## 2026-06-26 - UI OTA y ajustes v0.1.3
+
+Cambio solicitado:
+
+- Mostrar progreso OTA en pantalla.
+- Quitar texto inferior de WiFi/IP.
+- Mostrar version firmware.
+- Mover Ajustes fuera del nav inferior y abrirlo desde boton superior con engranaje.
+
+Solucion:
+
+- Creada version `versions/v0.1.3` desde `v0.1.2`.
+- `ota_service` usa flujo `esp_https_ota_begin/perform/finish` para exponer porcentaje.
+- UI anade barra OTA superior, version `v0.1.3`, boton superior de ajustes y nav inferior solo con 4 pantallas principales.
+- El texto inferior permanente se elimina.
+
+Validacion:
+
+- Build `versions/v0.1.3` correcto.
+- Flash por `COM6` correcto.
+- Servidor OTA LAN sirve binario `v0.1.3` con tamano `1696608` bytes.
+
+Estado:
+
+Pendiente validacion visual por usuario en placa y prueba OTA viendo barra.
