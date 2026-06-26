@@ -1,23 +1,8 @@
 <component>
-  <api>
-    <prop name="active" type="string" default="charger"/>
-  </api>
-  <view extends="lv_obj" width="100%" height="86" flex_flow="row" flex_align_main="space_around" flex_align_cross="center" style_bg_color="#color_panel" style_border_color="#color_line" style_border_width="1" style_pad_left="16" style_pad_right="16">
-    <lv_button width="214" height="56" style_bg_color="#color_orange" style_radius="8">
-      <lv_label text="Cargador" align="center" style_text_color="0xffffff"/>
-      <screen_load_event screen="charger" trigger="clicked" anim_type="fade"/>
-    </lv_button>
-    <lv_button width="214" height="56" style_bg_color="0xffffff" style_radius="8" style_border_color="#color_line" style_border_width="1">
-      <lv_label text="EVCC" align="center" style_text_color="#color_text"/>
-      <screen_load_event screen="evcc" trigger="clicked" anim_type="fade"/>
-    </lv_button>
-    <lv_button width="214" height="56" style_bg_color="0xffffff" style_radius="8" style_border_color="#color_line" style_border_width="1">
-      <lv_label text="Solar" align="center" style_text_color="#color_text"/>
-      <screen_load_event screen="solar" trigger="clicked" anim_type="fade"/>
-    </lv_button>
-    <lv_button width="214" height="56" style_bg_color="0xffffff" style_radius="8" style_border_color="#color_line" style_border_width="1">
-      <lv_label text="Vehiculo" align="center" style_text_color="#color_text"/>
-      <screen_load_event screen="vehicle" trigger="clicked" anim_type="fade"/>
-    </lv_button>
+  <view width="1024" height="86" style_bg_color="0xfffbf4">
+    <lv_label x="96" y="32" text="Cargador"/>
+    <lv_label x="342" y="32" text="EVCC"/>
+    <lv_label x="586" y="32" text="Solar"/>
+    <lv_label x="820" y="32" text="Vehiculo"/>
   </view>
 </component>

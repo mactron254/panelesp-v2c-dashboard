@@ -344,3 +344,9 @@ Solucion:
 Estado:
 
 Pendiente validar en `viewer.lvgl.io`.
+
+Actualizacion:
+
+- Screens ya cargan tras usar sintaxis basica.
+- Components fallaban salvo `action_button`.
+- Components simplificados a sintaxis basica sin flex, bindings, constantes ni props color.
