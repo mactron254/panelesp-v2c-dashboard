@@ -1,0 +1,12 @@
+<component>
+  <api>
+    <prop name="label" type="string" default="Metric"/>
+    <prop name="value" type="string" default="--"/>
+    <prop name="unit" type="string" default=""/>
+  </api>
+  <view extends="lv_obj" style_width="220" style_height="148" style_bg_color="0xfffbf4">
+    <lv_label x="16" y="16" text="$label"/>
+    <lv_label x="16" y="64" text="$value"/>
+    <lv_label x="120" y="72" text="$unit"/>
+  </view>
+</component>

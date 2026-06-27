@@ -1,0 +1,147 @@
+menu "PanelESP Dashboard"
+
+    menu "WiFi"
+        choice PANEL_WIFI_BACKEND
+            prompt "WiFi backend"
+            default PANEL_WIFI_BACKEND_ESP_HOSTED_C6_SDIO if IDF_TARGET_ESP32P4
+            default PANEL_WIFI_BACKEND_NATIVE
+
+            config PANEL_WIFI_BACKEND_NATIVE
+                bool "Native ESP WiFi"
+                depends on !IDF_TARGET_ESP32P4
+
+            config PANEL_WIFI_BACKEND_ESP_HOSTED_C6_SDIO
+                bool "ESP-Hosted C6 over SDIO"
+                depends on IDF_TARGET_ESP32P4
+
+            config PANEL_WIFI_BACKEND_NONE
+                bool "Disabled/demo only"
+        endchoice
+        config PANEL_WIFI_SSID
+            string "WiFi SSID"
+            default ""
+
+        config PANEL_WIFI_PASSWORD
+            string "WiFi password"
+            default ""
+    endmenu
+
+    menu "Home Assistant"
+        config PANEL_HA_BASE_URL
+            string "Home Assistant base URL"
+            default "http://192.168.50.120:8123"
+
+        config PANEL_HA_TOKEN
+            string "Home Assistant long-lived token"
+            default ""
+
+        config PANEL_HA_PARKING_ENTITY
+            string "Parking cover entity"
+            default "cover.puerta_parking_inteligente"
+    endmenu
+
+    menu "EVCC"
+        config PANEL_EVCC_BASE_URL
+            string "EVCC base URL"
+            default "http://192.168.50.120:7070"
+    endmenu
+
+    menu "V2C Trydan"
+        config PANEL_V2C_HOST
+            string "V2C Trydan host or IP"
+            default ""
+    endmenu
+
+    menu "Screens"
+        config PANEL_SCREEN_CHARGER
+            bool "Enable Cargador V2C screen"
+            default y
+
+        config PANEL_SCREEN_EVCC
+            bool "Enable EVCC screen"
+            default y
+
+        config PANEL_SCREEN_SOLAR
+            bool "Enable Solar Home Assistant screen"
+            default y
+
+        config PANEL_SCREEN_VEHICLE
+            bool "Enable Passat GTE screen"
+            default y
+
+        config PANEL_SCREEN_SETTINGS
+            bool "Enable Ajustes status screen"
+            default y
+    endmenu
+
+    menu "OTA"
+        config PANEL_OTA_URL
+            string "HTTP/HTTPS OTA firmware URL"
+            default ""
+
+        config PANEL_OTA_CERT_PEM
+            string "HTTPS OTA server certificate PEM, empty for local HTTP"
+            default ""
+    endmenu
+
+    menu "Board pins"
+        config PANEL_LCD_RST_GPIO
+            int "LCD reset GPIO, -1 disabled"
+            default 27
+
+        config PANEL_LCD_BK_LIGHT_GPIO
+            int "LCD backlight GPIO, -1 disabled"
+            default 23
+
+        config PANEL_LCD_BK_LIGHT_PWM
+            bool "Use LEDC PWM for LCD backlight"
+            default y
+
+        config PANEL_LCD_BK_LIGHT_BRIGHTNESS
+            int "LCD backlight brightness percent"
+            range 0 100
+            default 100
+
+        config PANEL_MIPI_DSI_PHY_LDO_CHAN
+            int "MIPI DSI PHY LDO channel, 0 disabled"
+            default 3
+
+        config PANEL_MIPI_DSI_PHY_LDO_MV
+            int "MIPI DSI PHY LDO voltage mV"
+            default 2500
+
+        config PANEL_TOUCH_I2C_PORT
+            int "GT911 I2C port"
+            default 1
+
+        config PANEL_TOUCH_I2C_SDA_GPIO
+            int "GT911 SDA GPIO"
+            default 7
+
+        config PANEL_TOUCH_I2C_SCL_GPIO
+            int "GT911 SCL GPIO"
+            default 8
+
+        config PANEL_TOUCH_I2C_SCL_SPEED_HZ
+            int "GT911 I2C SCL speed Hz"
+            default 100000
+
+        config PANEL_TOUCH_RST_GPIO
+            int "GT911 reset GPIO, -1 disabled"
+            default 22
+
+        config PANEL_TOUCH_INT_GPIO
+            int "GT911 interrupt GPIO, -1 disabled"
+            default 21
+    endmenu
+
+
+    menu "microSD"
+        config PANEL_SD_CARD
+            bool "Mount optional microSD at boot"
+            default y
+    endmenu
+
+endmenu
+
+

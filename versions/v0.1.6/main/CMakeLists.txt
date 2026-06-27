@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "board_display.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        ui
+        services
+        esp32_p4_function_ev_board
+        esp_lvgl_port
+        nvs_flash
+        esp_wifi
+        esp_wifi_remote
+        esp_hosted
+        esp_event
+        esp_netif
+        lvgl
+)

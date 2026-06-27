@@ -1,0 +1,12 @@
+<component>
+  <api>
+    <prop name="title" type="string" default="PanelESP"/>
+  </api>
+  <view extends="lv_obj" style_width="1024" style_height="72" style_bg_color="0xf7f1e7">
+    <lv_label x="24" y="22" text="$title"/>
+    <lv_label x="700" y="26" text="WiFi remoto pendiente"/>
+    <lv_button x="884" y="16" width="116" height="42" style_bg_color="0x1f2a2e">
+      <lv_label text="Parking" align="center"/>
+    </lv_button>
+  </view>
+</component>
